@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Hans Vallejo Garcia</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>7 Meses de Amor</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #f8e0e6; /* Fondo rosado claro */
+    }
+
+    /* Resto de los estilos CSS */
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333; /* Color del título gris oscuro */
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #555; /* Color del párrafo gris medio */
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    }
+
+    .buttons button.yes {
+      background-color: #4CAF50; /* Verde */
+      color: white;
+    }
+
+    .buttons button.yes:hover {
+      background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+    }
+
+    .buttons button.no {
+      background-color: #f44336; /* Rojo */
+      color: white;
+      cursor: default; /* Deshabilita el puntero */
+    }
+
+    .buttons button.no:hover {
+      background-color: #d32f2f; /* Rojo más oscuro al pasar el ratón */
+    }
+
+    .image-container {
+      margin-top: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px; /* Esquinas redondeadas para la imagen */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para la imagen */
+    }
+
+    .carta {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feliz séptimo mes de aniversario mi principessa</h1>
+
+  <p>Seguiremos amándonos mucho y cumpliremos lo que nos prometimos: un futuro juntos.</p>
+
+  <div class="buttons">
+    <button class="yes" id="yesButton">Sí</button>
+    <button class="no" id="noButton" disabled>No</button>
+  </div>
+
+  <div class="image-container">
+    <img src="https://photos.google.com/photo/AF1QipMjbugPT_ZMRx0fpZbN8B3G3Ke1XmqSIyRVVUR-" alt="Imagen de aniversario"> 
+  </div>
+
+  <div class="carta" id="cartaContainer" style="display: none;"> 
+    <h2>Mi Carta de Amor</h2>
+    <p>Amor, no fue un gran septimo aniversario. Sin embargo, se que lo que ocurrio hoy cambiara definitivamente el rumbo de las cosas. Nuestra relacion se tornara en color puro, lleno de calidez,amor, ternura, respeto, confianza y seguridad. No menti al decir que quiero y deseo que mi compañero de vida seas tu. Hoy reafirmo la idea, quiero casarme contigo, quiero estar el dia que te gradues, quiero construir un hogar con muchas mascotas contigo, quiero envejecer contigo y llegar al final de mis dias junto a ti. LA UNICA COMPAÑERA DE VIDA QUE TENDRE ERES TU. Te amo, nuestro presente es el que perdurara. Te amo mi corazon de pato. Lograremos lo que en un inicio nos prometimos. Hoy compartimos al menos un poco de pollito, y no hicimos ningun brindis; pero que sea por un futuro a tu lado. POR UN FUTURO JUNTOS.TE AMO MI MUJER. Atentamente chuwaca</p>
+  </div>
+
+  <iframe id="myAudio" width="0" height="0" src="https://www.youtube.com/embed/M1nW14IMsrc?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <script>
+    const yesButton = document.getElementById("yesButton");
+    const cartaContainer = document.getElementById("cartaContainer");
+
+    yesButton.addEventListener("click", function() {
+      cartaContainer.style.display = "block"; // Muestra la carta
+    });
+
+    // Crear los corazones (igual que antes)
+    const body = document.body;
+    for (let i = 0; i < 4; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.width = "50px";
+      heart.style.height = "50px";
+      heart.style.backgroundColor = "#ff0000";
+      heart.style.borderRadius = "50% 50% 0 0";
+      heart.style.transform = "rotate(-45deg)";
+      heart.style.position = "absolute";
+      heart.style.zIndex = "-1";
+
+      // Posicionamiento de los corazones
+      if (i === 0) {
+        heart.style.top = "10px";
+        heart.style.left = "10px";
+      } else if (i === 1) {
+        heart.style.bottom = "10px";
+        heart.style.left = "10px";
+      } else if (i === 2) {
+        heart.style.top = "10px";
+        heart.style.right = "10px";
+      } else {
+        heart.style.bottom = "10px";
+        heart.style.right = "10px";
+      }
+
+      body.appendChild(heart);
+    }
+  </script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
